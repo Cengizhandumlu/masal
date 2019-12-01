@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/changeButtonId"
+        android:layout_width="108dp"
+        android:layout_height="53dp"
+        android:onClick="changeButton"
+        android:text="Degistir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordId" />
+
+    <TextView
+        android:id="@+id/sentenceId"
+        android:layout_width="396dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="16dp"
+        android:text="Cümle"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreId" />
+
+    <TextView
+        android:id="@+id/wordId"
+        android:layout_width="392dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="172dp"
+        android:text="Kelime"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sentenceId" />
+
+    <TextView
+        android:id="@+id/mean1Id"
+        android:layout_width="188dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Cevap1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/changeButtonId"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeButtonId" />
+
+    <TextView
+        android:id="@+id/mean2Id"
+        android:layout_width="201dp"
+        android:layout_height="198dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="4dp"
+        android:text="Cevap2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/changeButtonId"
+        app:layout_constraintTop_toBottomOf="@+id/changeButtonId" />
+
+    <Button
+        android:id="@+id/selectButton1Id"
+        android:layout_width="106dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:onClick="selectButton1"
+        android:text="SEÇ"
+        app:layout_constraintEnd_toEndOf="@+id/mean1Id"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mean1Id" />
+
+    <Button
+        android:id="@+id/selectButton2Id"
+        android:layout_width="97dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:onClick="selectButton2"
+        android:text="SEÇ"
+        app:layout_constraintEnd_toEndOf="@+id/mean2Id"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="@+id/mean2Id"
+        app:layout_constraintTop_toBottomOf="@+id/mean2Id" />
+
+    <TextView
+        android:id="@+id/scoreId"
+        android:layout_width="393dp"
+        android:layout_height="52dp"
+        android:text="Puan"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
